@@ -1,82 +1,111 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Exopod - Главная</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/header.css" />
-    <script defer src="js/include-header.js"></script>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
-    <!-- Загружаем шапку из отдельного файла -->
-    <div id="header-placeholder"></div><main>
-  <!-- Вступительный блок -->
-  <section class="intro">
-    <p>Здесь вы можете посмотреть актуальные новости и договориться о заказе:</p>
-    <div class="social-links">
-      <a href="#" class="btn tg-btn">Telegram</a>
-      <a href="#" class="btn vk-btn">ВКонтакте</a>
+    <!-- ЗАГРУЖАЕМАЯ ШАПКА -->
+    <div id="header-placeholder"></div>
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('header.html')
+      .then(response => {
+        if (!response.ok) throw new Error('Не удалось загрузить header.html');
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error(error));
+  });
+</script>
+    <!-- #комментарии# Основной контент главной страницы -->
+    <div align="center">
+      <main>
+        <!-- #комментарии# Описание сайта и ссылки на соцсети -->
+        <section class="intro"> </section>
+      </main>
     </div>
-  </section>
-
-  <!-- Каталог товаров -->
-  <section class="catalog">
-    <h2>Каталог товаров</h2>
-    <div class="catalog-items">
-      <div class="item">
-        <img src="img/placeholder.jpg" alt="Категория Животные" />
+    <p align="center">Здесь вы можете посмотреть актуальные новости и
+      договориться о заказе:</p>
+    <div class="social-links" align="center"> <a href="#" class="btn
+        tg-btn">Telegram</a> <a href="#" class="btn vk-btn">ВКонтакте</a>
+    </div>
+    <!-- #комментарии# Каталог товаров с картинками (заглушки) -->
+    <div align="center">
+      <section class="catalog"> </section>
+    </div>
+    <h2 align="center">Каталог товаров</h2>
+    <div class="catalog-items" align="center">
+      <div class="item"> <img src="img/placeholder.jpg" alt="Категория
+          Животные">
         <p>Животные и товары</p>
       </div>
-      <div class="item">
-        <img src="img/placeholder.jpg" alt="Категория Растения" />
+      <div class="item"> <img src="img/placeholder.jpg" alt="Категория
+          Растения">
         <p>Растения и товары</p>
       </div>
-      <div class="item">
-        <img src="img/placeholder.jpg" alt="Категория Декор и мерч" />
+      <div class="item"> <img src="img/placeholder.jpg" alt="Категория
+          Декор и мерч">
         <p>Декор и мерч</p>
       </div>
     </div>
-  </section>
-
-  <!-- Рекомендованные товары -->
-  <section class="recommended">
-    <h2>Рекомендованные товары</h2>
-    <p>Товары будут добавлены позже</p>
-  </section>
-
-  <!-- Акционные товары -->
-  <section class="promo">
-    <h2>Товары по акциям</h2>
-    <p>Акции появятся позже</p>
-  </section>
-
-  <!-- Карусель статей -->
-  <section class="articles-carousel">
-    <h2>Статьи</h2>
-    <div class="carousel">
-      <article>
-        <h3>Статья 1</h3>
-        <p>Краткое описание статьи 1...</p>
-      </article>
-      <article>
-        <h3>Статья 2</h3>
-        <p>Краткое описание статьи 2...</p>
-      </article>
-      <article>
-        <h3>Статья 3</h3>
-        <p>Краткое описание статьи 3...</p>
-      </article>
-      <article>
-        <h3>Статья 4</h3>
-        <p>Краткое описание статьи 4...</p>
-      </article>
-      <article>
-        <h3>Статья 5</h3>
-        <p>Краткое описание статьи 5...</p>
-      </article>
+    <div align="center">
+      <section class="recommended"> </section>
     </div>
-  </section>
-</main>
-
+    <h2 align="center">Рекомендованные товары</h2>
+    <p align="center">Товары будут добавлены позже</p>
+    <div align="center">
+      <section class="promo"> </section>
+    </div>
+    <h2 align="center">Товары по акциям</h2>
+    <p align="center">Акции появятся позже</p>
+    <div align="center">
+      <section class="articles-carousel"> </section>
+    </div>
+    <h2 align="center">Статьи</h2>
+    <div class="carousel">
+      <div align="center">
+        <article> </article>
+      </div>
+      <h3 align="center">Статья 1</h3>
+      <p align="center">Краткое описание статьи 1...</p>
+      <div align="center">
+        <article> </article>
+      </div>
+      <h3 align="center">Статья 2</h3>
+      <p align="center">Краткое описание статьи 2...</p>
+      <div align="center">
+        <article> </article>
+      </div>
+      <h3 align="center">Статья 3</h3>
+      <p align="center">Краткое описание статьи 3...</p>
+      <div align="center">
+        <article> </article>
+      </div>
+      <h3 align="center">Статья 4</h3>
+      <p align="center">Краткое описание статьи 4...</p>
+      <div align="center">
+        <article> </article>
+      </div>
+      <h3 align="center">Статья 5</h3>
+      <p align="center">Краткое описание статьи 5...</p>
+    </div>
+    <!-- Скрипт для подгрузки header.html -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Ошибка загрузки header.html:', error));
+    });
+  </script>
   </body>
 </html>
