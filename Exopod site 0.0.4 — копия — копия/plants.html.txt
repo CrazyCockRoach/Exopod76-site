@@ -1,0 +1,96 @@
+<!-- # так # Страница "Растения и сопутствующие товары" -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Растения и сопутствующие товары</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/plants.css">
+  </head>
+  <body>
+    <!-- # Верхняя панель с меню и логотипом -->
+    <header class="topbar">
+      <div align="center">
+        <nav class="nav-menu"> <a href="index.html">Главная</a> <a
+            href="animals.html">Животные и зоотовары</a> <a
+            href="plants.html" class="active">Растения и товары</a> <a
+            href="decor.html">Декор и мерч</a> <a href="extra.html"
+            style="display:none;">Дополнительно</a> </nav>
+      </div>
+      <div class="logo-container" align="center">
+        <!-- Логотип сюда (будет вставлен вручную) --> <img
+          src="images/logo.png" alt="Exopod Логотип"> </div>
+    </header>
+    <!-- # Основной контент страницы -->
+    <div align="center">
+      <main class="main-content">
+        <!-- # Блок категорий с кнопками -->
+        <section class="categories-container">
+          <!-- Кнопка категория "Растения" --> <button
+            class="category-btn"
+            onclick="document.getElementById('plants').scrollIntoView({behavior:
+            'smooth'});"> <img src="images/categories/plants.jpg"
+              alt="Растения">
+            <div class="category-title">Растения</div>
+          </button>
+          <!-- Кнопка категория "Средства для ухода" --> <button
+            class="category-btn"
+            onclick="document.getElementById('care').scrollIntoView({behavior:
+            'smooth'});"> <img src="images/categories/care.jpg"
+              alt="Средства для ухода">
+            <div class="category-title">Средства для ухода</div>
+          </button>
+          <!-- Кнопка категория "Флорариумы" --> <button
+            class="category-btn"
+            onclick="document.getElementById('terrariums').scrollIntoView({behavior:
+            'smooth'});"> <img src="images/categories/terrariums.jpg"
+              alt="Флорариумы">
+            <div class="category-title">Флорариумы</div>
+          </button>
+          <!-- Кнопка категория "Авторские горшки" --> <button
+            class="category-btn"
+            onclick="document.getElementById('pots').scrollIntoView({behavior:
+            'smooth'});"> <img src="images/categories/pots.jpg"
+              alt="Авторские горшки">
+            <div class="category-title">Авторские горшки</div>
+          </button> </section>
+        <!-- # Секции категорий -->
+        <section id="plants" class="category-section">
+          <h3>Растения</h3>
+          <div class="content">
+            <p>Описание и информация о растениях.</p>
+          </div>
+        </section>
+        <section id="care" class="category-section">
+          <h3>Средства для ухода</h3>
+          <div class="content">
+            <p>Информация о средствах для ухода за растениями.</p>
+          </div>
+        </section>
+        <section id="terrariums" class="category-section">
+          <h3>Флорариумы</h3>
+          <div class="content">
+            <p>Описание флорариумов и сопутствующих товаров.</p>
+          </div>
+        </section>
+        <section id="pots" class="category-section">
+          <h3>Авторские горшки</h3>
+          <div class="content">
+            <p>Информация об авторских горшках для растений.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- # Футер с соцсетями -->
+    <footer class="footer">
+      <p align="center">Здесь вы можете посмотреть актуальные новости и
+        договориться о заказе:</p>
+      <div class="social-links"> <a href="#" class="social-btn vk-btn"
+          aria-label="ВКонтакте"></a> <a href="#" class="social-btn
+          tg-btn" aria-label="Telegram"></a> </div>
+    </footer>
+  </body>
+</html>
