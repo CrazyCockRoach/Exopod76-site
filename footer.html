@@ -1,0 +1,125 @@
+  <!-- 🌿 FOOTER -->
+
+
+<style>
+
+  /* === 🪵 FOOTER === */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer .social-buttons {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+
+    /* Контейнер со всеми социальными ссылками */
+    .social-links {
+      display: flex;                 /* Выстраиваем ссылки в строку */
+      justify-content: center;       /* Центрируем по горизонтали */
+      flex-wrap: wrap;               /* Перенос при нехватке места */
+      gap: 30px;                     /* Отступ между блоками */
+      margin-top: 30px;
+    }
+
+    /* Каждая отдельная ссылка (иконка + подпись) */
+    .social-links a {
+      display: flex;                 /* Располагаем содержимое вертикально */
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;         /* Без подчеркивания по умолчанию */
+      color: black;                  /* Цвет текста */
+      transition: all 0.3s ease;     /* Плавные эффекты */
+    }
+
+    /* Стили для иконки (картинки) */
+    .social-links a img {
+      width: 60px;                   /* Размер иконки */
+      height: 60px;
+      border-radius: 50%;            /* Делаем круглую форму */
+      object-fit: cover;             /* Чтобы картинка не искажалась */
+      transition: all 0.3s ease;
+    }
+
+    /* Эффект наведения на иконку */
+    .social-links a:hover img {
+      transform: scale(1.1);         /* Увеличиваем */
+      filter: brightness(0.85);      /* Затемняем */
+    }
+
+    /* Стили для текста под иконкой */
+    .social-links a span {
+      margin-top: 5px;               /* Отступ сверху */
+      transition: all 0.3s ease;
+    }
+
+    /* Подчеркивание текста при наведении */
+    .social-links a:hover span {
+      text-decoration: underline;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  
+
+
+ <!-- Контейнер со всеми соц. кнопками -->
+  <div class="social-links">
+
+    <!-- ВКонтакте -->
+    <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+      <!-- Картинка логотипа VK -->
+      <img src="img/vk.png" alt="ВКонтакте">
+      <!-- Подпись под иконкой -->
+      <span>ВКонтакте</span>
+    </a>
+
+
+    <!-- Telegram -->
+    <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+      <!-- Картинка логотипа Telegram -->
+      <img src="img/tg.png" alt="Telegram">
+      <!-- Подпись под иконкой -->
+      <span>Telegram</span>
+    </a>
+
+
+
+
+
+
+
+
+    <!-- Пример с YouTube -->
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+      <img src="img/youtube.png" alt="YouTube">
+      <span>YouTube</span>
+    </a>
+
+
+</footer>
+
+

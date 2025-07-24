@@ -1,0 +1,79 @@
+<!-- # так # Дополнительная пустая страница -->
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exopod - Тестовая шапка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<style> /* ----------------------- */
+/* # СТИЛИ ДЛЯ ШАПКИ EXOPOD - СИММЕТРИЯ МЕНЮ */
+/* ----------------------- */
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Левая часть, логотип, правая часть */
+  align-items: center;
+  background-color: #0b3d0b;
+  padding: 10px 30px;
+}
+
+/* Левая и правая части меню одинаковые по стилю */
+.nav-left,
+.nav-right {
+  display: flex;
+  justify-content: space-evenly;  /* равномерно распределить ссылки */
+  gap: 30px;
+}
+
+/* Контейнер логотипа */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Картинка логотипа */
+.logo-container img {
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Стили ссылок */
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.site-header a:hover {
+  color: #a6d4a6;
+} </style> 
+
+<body>
+  <!-- # ШАПКА сайта с логотипом по центру # -->
+  <header class="site-header">
+    <!-- # Левое меню # -->
+    <nav class="nav-left">
+      <a href="index.html">Главная</a>
+      <a href="animals.html">Животные и товары</a>
+    </nav>
+
+    <!-- # Центр: логотип # -->
+    <div class="logo-container">
+      <img src="img/logo.PNG" alt="Exopod logo">
+    </div>
+
+    <!-- # Правое меню # -->
+    <nav class="nav-right">
+      <a href="plants.html">Растения и товары</a>
+      <a href="decor.html">Декор и мерч</a>
+      <a href="extra.html">Другое</a>
+    </nav>
+  </header>
+</body>
+</html>
